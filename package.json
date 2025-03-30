@@ -1,0 +1,22 @@
+{
+  "name": "mobile-automation",
+  "version": "1.0.0",
+  "description": "Projeto de automação mobile usando WebdriverIO, Appium, Mocha e Sauce Labs",
+  "main": "wdio.conf.js",
+  "scripts": {
+    "test": "wdio wdio.conf.js",
+    "test:android": "wdio wdio.android.conf.js",
+    "test:ios": "wdio wdio.ios.conf.js",
+    "test:sauce": "wdio wdio.sauce.conf.js",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open allure-report"
+  },
+  "dependencies": {
+    "chai": "^4.3.6",
+    "wdio-chromedriver-service": "^8.1.1"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^9.12.2",
+    "webdriverio": "^8.0.0"
+  }
+}
